@@ -38,3 +38,13 @@ legend(locator(1),inset = 0.5, legend = c("CRIM","ZN","INDUS","CHAS","NOX","RM",
                                           "AGE","DIS","RAD","TAX","PTRATIO","B",
                                           "LSTAT","MEDV"), 
        cex = 0.56, pch = char, lty = linetype)
+
+###########异方差检验
+data2 <- data.frame(data[,1:2],data[,4:6],data[,8:13],e2)
+lm2 <- lm(e2~.,data = data2)
+an1 <- anova(lm2)
+
+
+#X <- data.frame()
+
+#cor1 <- cor.test(X,abse,alternative="two.sided",method="spearman",conf.level=0.95)
