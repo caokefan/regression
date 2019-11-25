@@ -19,11 +19,11 @@ anova(lm)
 lm.for <- step(lm,direction = "both")
 summary(lm.for)
 
-#多重共线性检验 RAD和TAX的方差扩大因子较大，相关系数0.91,RAD和TAX存在多重共线性
+# 多重共线性检验 RAD和TAX的方差扩大因子较大，相关系数0.91,RAD和TAX存在多重共线性
 vif(lm.for)
 cor(data$RAD,data$TAX)
 
-#岭迹图
+# 岭迹图
 datas <- data.frame(scale(data))
 ridge <- lm.ridge(MEDV~.-1,data=datas,lambda = seq(0,200,10))
 beta <- coef(ridge)
