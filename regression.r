@@ -38,3 +38,5 @@ legend(locator(1),inset = 0.5, legend = c("CRIM","ZN","INDUS","CHAS","NOX","RM",
                                           "AGE","DIS","RAD","TAX","PTRATIO","B",
                                           "LSTAT","MEDV"), 
        cex = 0.56, pch = char, lty = linetype)
+
+# 定性变量
