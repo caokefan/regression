@@ -1,7 +1,7 @@
 library(car)
 library(MASS)
 
-data <- read.csv('house.csv')
+data <- read.csv('BostonHousePrice.csv')
 data <- data[2:15]
 
 # 包含定性变量拟合模型，R^2为0.7406，CHAS变量不能剔除
