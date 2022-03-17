@@ -1,4 +1,4 @@
-# 西南交通大学
+
 ## 实用回归分析期末报告
 [![开源许可证](https://img.shields.io/badge/license-BSD-blue.svg?style=plastic)](LICENSE)
 
